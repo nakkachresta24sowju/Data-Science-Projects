@@ -126,6 +126,6 @@ def Input_Output():
     else:
         iris_setosa_image = Image.open('Setosa.jpg')
         st.image(iris_setosa_image, "Setosa")
-
-
+        
+        
 Input_Output()
