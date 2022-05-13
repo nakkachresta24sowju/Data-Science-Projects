@@ -116,13 +116,13 @@ def Input_Output():
     X_scaled = scaler.transform(
         [[sepal_length, sepal_width, petal_length, petal_width]])
     predicted_values = classifier.predict(X_scaled)
-
-    if predicted_values == "Iris-versicolor":
-        iris_versicolor_image = Image.open('Versicolor.jpg')
-        st.image(iris_versicolor_image, "Versicolor")
-    elif predicted_values == "Iris-virginica":
+    
+    if predicted_values == "Iris-virginica":
         iris_virginica_image = Image.open('Virginica.jpg')
         st.image(iris_virginica_image, "Virginica")
+    elif predicted_values == "Iris-versicolor":
+        iris_versicolor_image = Image.open('Versicolor.jpg')
+        st.image(iris_versicolor_image, "Versicolor")
     elif predicted_values == "Iris-setosa":
         iris_setosa_image = Image.open('Setosa.jpg')
         st.image(iris_setosa_image, "Setosa")
