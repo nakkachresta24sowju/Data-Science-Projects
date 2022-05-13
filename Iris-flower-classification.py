@@ -78,7 +78,7 @@ classifier.fit(X_train, y_train)
 
 
 # predicted_values = classifier.predict(x_test)
-# st.write(accuracy_score(y_test, predicted_values))
+
 
 st.write(df[df.Species == "Iris-versicolor"])
 
@@ -126,6 +126,8 @@ def Input_Output():
     elif predicted_values == "Iris-setosa":
         iris_setosa_image = Image.open('Setosa.jpg')
         st.image(iris_setosa_image, "Setosa")
+        
+    st.write(accuracy_score(X_scaled, predicted_values))
         
         
 Input_Output()
