@@ -80,7 +80,7 @@ classifier.fit(X_train, y_train)
 # predicted_values = classifier.predict(x_test)
 
 
-st.write(df[df.Species == "Iris-versicolor"])
+# st.write(df[df.Species == "Iris-versicolor"])
 
 
 def Input_Output():
