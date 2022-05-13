@@ -123,7 +123,7 @@ def Input_Output():
     elif predicted_values == "Iris-virginica":
         iris_virginica_image = Image.open('Virginica.jpg')
         st.image(iris_virginica_image, "Virginica")
-    else:
+    elif predicted_values == "Iris-setosa":
         iris_setosa_image = Image.open('Setosa.jpg')
         st.image(iris_setosa_image, "Setosa")
         
