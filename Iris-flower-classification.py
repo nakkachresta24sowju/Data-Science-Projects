@@ -117,7 +117,7 @@ def Input_Output():
         [[sepal_length, sepal_width, petal_length, petal_width]])
     predicted_values = classifier.predict(X_scaled)
     
-    st.write(predicted_values)
+    #st.write(predicted_values)
     
     if predicted_values == "Iris-virginica":
         iris_virginica_image = Image.open('Virginica.jpg')
