@@ -88,19 +88,30 @@ def Input_Output():
     sepal_length = st.slider(
         label='Sepal Length',
         min_value=df['SepalLengthCm'].min(),
-        max_value=df['SepalLengthCm'].max())
+        max_value=df['SepalLengthCm'].max(),
+        value=float(df['SepalLengthCm'].mean()),
+        step=0.1)
+    
     sepal_width = st.slider(
         label='Sepal Width',
         min_value=df['SepalWidthCm'].min(),
-        max_value=df['SepalWidthCm'].max())
+        max_value=df['SepalWidthCm'].max(),
+        value=float(df['SepalWidthCm'].mean()),
+        step=0.1)
+    
     petal_length = st.slider(
         label='Petal Length',
         min_value=df['PetalLengthCm'].min(),
-        max_value=df['PetalLengthCm'].max())
+        max_value=df['PetalLengthCm'].max(),
+        value=float(df['PetalLengthCm'].mean()),
+        step=0.1)
+    
     petal_width = st.slider(
         label='Petal Width',
         min_value=df['PetalWidthCm'].min(),
-        max_value=df['PetalWidthCm'].max())
+        max_value=df['PetalWidthCm'].max(),
+        value=float(df['PetalWidthCm'].mean()),
+        step=0.1)
 
     X_scaled = scaler.transform(
         [[sepal_length, sepal_width, petal_length, petal_width]])
