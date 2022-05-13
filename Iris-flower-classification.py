@@ -1,9 +1,9 @@
-from sklearn.preprocessing import StandardScaler
 import streamlit as st
 from sklearn.svm import SVC
 from PIL import Image, ImageFilter, ImageEnhance
 from sklearn.metrics import precision_score, accuracy_score, recall_score
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
