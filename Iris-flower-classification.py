@@ -16,18 +16,19 @@ warnings.filterwarnings("ignore")
 st.title("Iris Flower Classification App")
 
 # Create Data
-data = 'C:\AAIC\Iris.csv'
+csv_url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+
 
 # To Improve speed and cache data
 
 
 @st.cache(persist=True)
-def explore_data(data):
-    df = pd.read_csv(data)
+def explore_data(csv_url):
+    df = pd.read_csv(csv_url)
     return df
 
 
-df = explore_data(data)
+df = explore_data(csv_url)
 
 # show data frame using head and tail in pandas.
 st.subheader('Preview Data')
