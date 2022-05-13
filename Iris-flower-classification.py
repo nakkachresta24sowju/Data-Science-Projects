@@ -126,8 +126,7 @@ def Input_Output():
     elif predicted_values == "Iris-setosa":
         iris_setosa_image = Image.open('Setosa.jpg')
         st.image(iris_setosa_image, "Setosa")
-        
-    st.write(accuracy_score(X_scaled, predicted_values))
+    st.write(accuracy_score(X_scaled))
         
         
 Input_Output()
